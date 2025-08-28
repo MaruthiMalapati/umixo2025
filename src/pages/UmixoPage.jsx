@@ -100,7 +100,7 @@ const UmixoPage = () => {
               <div class="text">
                 UMIXO 2025 IS COMING SOON{" "}
                 <span>
-                  <h1 className="dday-timer">Day's left: {countdown}</h1>
+                  <h1 className="dday-timer">Days left: {countdown}</h1>
                 </span>
               </div>
             </div>

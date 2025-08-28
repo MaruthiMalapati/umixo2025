@@ -32,7 +32,7 @@ const UmixoPageSlider = () => {
       type: "image",
       src: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
       alt: "Event 2",
-      title: "Winner Team 2022",
+      title: "Winner",
     },
     {
       number: 4,

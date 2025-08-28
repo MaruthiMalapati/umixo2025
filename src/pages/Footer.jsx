@@ -14,12 +14,12 @@ function Footer(props){
         }}
       >
         <img
-          src="images/image.png"
+          src="/images/LOGOFOOTER.png"
           alt="UMIXO 2025 Logo"
           style={{ height: 50, marginBottom: 12 }}
         />
         <img
-          src="images/umixologo.jpg"
+          src="/images/LOGO1.png"
           alt="UMIXO 2025 Logo"
           style={{ height: 50, marginBottom: 12, marginLeft: "5px" }}
         />

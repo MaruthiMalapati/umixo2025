@@ -79,7 +79,7 @@ const ResponsiveNav = ({ onAboutToggle, isAboutActive }) => {
           height: 54px;
           cursor: pointer;
           border-radius: 4px;
-          background: white;
+          // background: white;
         }
         .logo-title span {
           font-size: 24px;
@@ -168,8 +168,8 @@ const ResponsiveNav = ({ onAboutToggle, isAboutActive }) => {
         aria-label="Main navigation"
       >
         <div className="logo-title">
-          <img src="/images/image.png" alt="UMIXO 2025 Logo" />
-          <img src="/images/umixologo.jpg" alt="UMIXO 2025" />
+          <img src="/images/LOGOFOOTER.png" alt="UMIXO 2025 Logo" />
+          <img src="/images/LOGO1.png" alt="UMIXO 2025" />
         </div>
 
         <div

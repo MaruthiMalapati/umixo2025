@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 
 const ResponsiveNav = ({ onAboutToggle, isAboutActive }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [countdown, setCountdown] = useState("");
-  const countdownTarget = new Date("November 19, 2025 09:00:00").getTime();
+  // const [countdown, setCountdown] = useState("");
+  // const countdownTarget = new Date("November 19, 2025 09:00:00").getTime();
   // Close mobile menu on window resize (optional)
   useEffect(() => {
     const handleResize = () => {
@@ -15,28 +15,28 @@ const ResponsiveNav = ({ onAboutToggle, isAboutActive }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, [menuOpen]);
 
-  useEffect(() => {
-    // Countdown timer
-    const interval = setInterval(() => {
-      const now = Date.now();
-      const diff = countdownTarget - now;
+  // useEffect(() => {
+  //   // Countdown timer
+  //   const interval = setInterval(() => {
+  //     const now = Date.now();
+  //     const diff = countdownTarget - now;
 
-      if (diff <= 0) {
-        setCountdown("Event Started");
-        clearInterval(interval);
-        return;
-      }
+  //     if (diff <= 0) {
+  //       setCountdown("Event Started");
+  //       clearInterval(interval);
+  //       return;
+  //     }
 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / (1000 * 60)) % 60);
-      const seconds = Math.floor((diff / 1000) % 60);
+  //     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  //     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  //     const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  //     const seconds = Math.floor((diff / 1000) % 60);
 
-      setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
-    }, 1000);
+  //     setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+  //   }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   //   const navButtonStyle = {
   //     background: "transparent",
@@ -89,11 +89,20 @@ const ResponsiveNav = ({ onAboutToggle, isAboutActive }) => {
           user-select: none;
         }
         .nav-links {
-          display: flex;
-          gap: 28px;
-          font-weight: 700;
-          flex-grow: 1;
-          justify-content: center;
+          // display: flex;
+          // gap: 28px;
+          // font-weight: 700;
+          // flex-grow: 1;
+          // justify-content: center;
+
+
+              display: flex;
+    gap: 28px;
+    font-weight: 700;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding-right: 30px;
+
         }
         .nav-links button {
           background: transparent;
@@ -114,12 +123,12 @@ const ResponsiveNav = ({ onAboutToggle, isAboutActive }) => {
           border-color: #ff7900;
         }
         .dday-timer {
-          background: #ff7900;
-          padding: 6px 18px;
-          border-radius: 18px;
-          box-shadow: 0 0 18px #ff790080;
+          // background: #ff7900;
+          // padding: 6px 18px;
+          // border-radius: 18px;
+          // box-shadow: 0 0 18px #ff790080;
           font-weight: 700;
-          font-size: 18px;
+          // font-size: 18px;D 
           user-select: none;
           min-width: 180px;
           text-align: center;
@@ -211,7 +220,7 @@ const ResponsiveNav = ({ onAboutToggle, isAboutActive }) => {
           </button>
         </div>
 
-        <div className="dday-timer">D Day: {countdown}</div>
+        {/* <div className="dday-timer">D Day: {countdown}</div> */}
       </nav>
     </>
   );

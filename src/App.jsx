@@ -42,30 +42,14 @@ import './App.css'
 
 
 import React from "react";
-// import LandingPage from './LandingPage.jsx';
-import Plainpage from "./pages/plainpage.jsx";
-import Vibrantpage from "./pages/vibrantpage.jsx";
-// import Netflix from './pages/Netflix.jsx';
-import UmixoPage from './pages/UmixoPage.jsx';
+
+import UmixoPage from "./pages/UmixoPage.jsx";
 
 function App() {
-//   let [pages,setPages] = useState(<UmixoPage/>)
-// const handlepage = (page)=>{
-// if ( page === 'Pp'){
-//   setPages(<Plainpage/>)
-// }else if ( page === 'Vp'){
-//   setPages(<Vibrantpage/>)
-// }else if(page === 'Np'){
-//   setPages(<UmixoPage/>)
-// }
-// }
-
   return (
-<div>
-
-<UmixoPage/>
-</div>
-
+    <div>
+      <UmixoPage />
+    </div>
   );
 }
 

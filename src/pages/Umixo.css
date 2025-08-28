@@ -26,12 +26,13 @@
 }
 
 .image-container .text {
+  width: 100%;
   position: absolute;
   top: 50%;   /* vertical position */
   left: 50%;  /* horizontal position */
   transform: translate(-50%, -50%); /* center text */
   color: #ff7900;
-  font-size: 24px;
+  font-size: 5rem;
   font-weight: 900;
 
   padding: 8px 12px;

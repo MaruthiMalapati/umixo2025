@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer(props){
 
-    return(
-           <footer
+    return (
+      <footer
         style={{
           background: "rgba(0, 0, 0, 0.85)",
           padding: "24px 36px",
@@ -17,6 +17,11 @@ function Footer(props){
           src="images/image.png"
           alt="UMIXO 2025 Logo"
           style={{ height: 50, marginBottom: 12 }}
+        />
+        <img
+          src="images/umixologo.jpg"
+          alt="UMIXO 2025 Logo"
+          style={{ height: 50, marginBottom: 12, marginLeft: "5px" }}
         />
         <div style={{ marginBottom: 12 }}>
           <a href="#about-us-section" style={footerLinkStyle}>
@@ -32,10 +37,11 @@ function Footer(props){
           </a>
         </div>
         <div style={{ fontSize: 14, color: "#ccc" }}>
-          &copy; {new Date().getFullYear()} UMIXO | Built for HighRadius. All rights reserved.
+          &copy; {new Date().getFullYear()} UMIXO | Built for HighRadius. All
+          rights reserved.
         </div>
       </footer>
-    )
+    );
 }
 export default Footer;
     const footerLinkStyle = {

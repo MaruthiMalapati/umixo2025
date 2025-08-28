@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const ResponsiveNav = ({ onAboutToggle, isAboutActive }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [countdown, setCountdown] = useState("");
-  const countdownTarget = new Date("August 30, 2025 09:00:00").getTime();
+  const countdownTarget = new Date("November 19, 2025 09:00:00").getTime();
   // Close mobile menu on window resize (optional)
   useEffect(() => {
     const handleResize = () => {
@@ -169,7 +169,7 @@ const ResponsiveNav = ({ onAboutToggle, isAboutActive }) => {
       >
         <div className="logo-title">
           <img src="/images/image.png" alt="UMIXO 2025 Logo" />
-          <span>UMIXO 2025</span>
+          <img src="/images/umixologo.jpg" alt="UMIXO 2025" />
         </div>
 
         <div

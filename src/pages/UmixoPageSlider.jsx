@@ -16,15 +16,16 @@ const UmixoPageSlider = () => {
     {
       number: 1,
       type: "image",
-      src: "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80",
+      src: "images/previous events.jpg",
       alt: "Event 1",
-      title: "Old UMIXO Gallery",
+      title: "Previous Events ",
     },
+    // Old UMIXO Gallery
     {
       number: 2,
       type: "iframe",
       src: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&enablejsapi=1",
-      title: "2025 Launch Video",
+      title: "Umixo 2025",
     },
     {
       number: 3,
@@ -43,7 +44,7 @@ const UmixoPageSlider = () => {
     {
       number: 5,
       type: "iframe",
-      src: "https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1&mute=1&enablejsapi=1",
+      src: "images/umxioanouncement.mp4",
       title: "UMIXO Highlights",
     },
   ];

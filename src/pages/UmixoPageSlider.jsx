@@ -2,6 +2,7 @@
 
 // const UmixoPageSlider = () => {
 import React, { useRef } from "react";
+import "./UmixoPageSlider.css";
 
 const UmixoPageSlider = () => {
   const carouselRef = useRef(null);
@@ -51,115 +52,6 @@ const UmixoPageSlider = () => {
 
   return (
     <>
-      <style>
-        {`
-          * {
-            box-sizing: border-box;
-          }
-          body {
-            background: linear-gradient(180deg, #071a25 0%, #101010 100%);
-            color: #fff;
-            font-family: 'Montserrat', Arial, sans-serif;
-            min-height: 100vh;
-            margin: 0;
-           
-          }
-          .carousel-container {
-            width: 94vw;
-            max-width: 1350px;
-            margin: 50px auto 0 auto;
-            padding: 30px 0 32px 0;
-           
-            border-radius: 16px;
-            box-shadow: 0 10px 40px -18px #000;
-            position: relative;
-          }
-            //  background: rgba(20,28,44,0.87);
-          .carousel-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-left: 30px;
-            margin-bottom: 26px;
-          }
-          .carousel {
-            display: flex;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            gap: 30px;
-            padding-bottom: 8px;
-            margin-left: 30px;
-          }
-          .carousel::-webkit-scrollbar {
-            display: none;
-          }
-          .card {
-            position: relative;
-            min-width: 200px;
-            max-width: 210px;
-            height: 320px;
-          background: #a99b2d;
-            border-radius: 16px;
-            box-shadow: 0 4px 30px -18px #000;
-            overflow: hidden;
-            transition: transform 0.2s;
-          }
-          .card:hover {
-            transform: scale(1.06) rotate(-1deg);
-            z-index: 2;
-          }
-          .card img, .card iframe {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
-            border: none;
-          }
-          .card-number {
-            position: absolute;
-            top: 10px;
-            left: 12px;
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: transparent;
-            -webkit-text-stroke: 3px #fff;
-            text-stroke: 3px #fff;
-            opacity: 0.95;
-            z-index: 2;
-            pointer-events: none;
-          }
-          .card-title {
-            position: absolute;
-            bottom: 16px;
-            left: 14px;
-            color: #fff;
-            font-size: 1.15rem;
-            font-weight: 700;
-            text-shadow: 1px 2px 12px #000;
-          }
-          .carousel-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(40,40,45,0.74);
-            border: none;
-            color: #fff;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            font-size: 2rem;
-            cursor: pointer;
-            z-index: 10;
-            transition: background 0.14s;
-          }
-          .carousel-arrow:hover {
-            background: rgba(40, 40, 45, 0.9);
-          }
-          .arrow-left { left: 10px; }
-          .arrow-right { right: 10px; }
-        `}
-      </style>
-
-      {/* className="carousel-container" style={{ width: window.screen.width <= 768 ? 'fit-content' : '94vw' }} */}
       <div className="carousel-container">
         <div className="carousel-title">Trending Now</div>
         <button

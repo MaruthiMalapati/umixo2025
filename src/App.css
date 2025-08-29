@@ -3,7 +3,11 @@
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
+    width: 100%;
 }
+/* #rootDiv{
+  width: 100%;
+} */
 .navbtns{
       display: flex;
     padding: 2rem;
